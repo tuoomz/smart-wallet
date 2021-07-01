@@ -63,7 +63,7 @@ class App extends Component {
         <h1>Wallet</h1>
         <p>Contract Address: {this.state.address}</p>
         <p>Balance: {this.state.balance} eth <button type="button" onClick={this.handleWithdraw}>Withdraw</button></p>
-        <input type="number" value="0.01" name="deposit" ref="deposit"/>
+        <input type="number"  name="deposit" ref="deposit"/>
         <button type="button" onClick={this.handleDeposit}>Deposit</button>
       </div>
     );
