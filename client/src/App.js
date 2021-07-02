@@ -50,7 +50,9 @@ class App extends Component {
 
   handleWithdraw = async () => {
     this.Dbank.methods.withdraw().send({
-        from: this.accounts[0]
+        from: this.accounts[0],
+        gas: 2000000,
+        gasPrice:1,
        });
   }
 

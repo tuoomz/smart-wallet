@@ -33,13 +33,15 @@ contract dBank {
 
     //increase msg.sender ether deposit balance
     balance[msg.sender] = msg.value;
+
     //start msg.sender hodling time
     depositTime[msg.sender] = block.timestamp;
 
     //set msg.sender deposit status to true
     hasDepositedFunds[msg.sender] = true;
+
     //emit Deposit event
-    emit Deposit(msg.sender, msg.value);
+    emit Deposit(msg.sender, msg.value); 
 
   }
 
